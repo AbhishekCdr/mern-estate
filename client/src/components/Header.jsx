@@ -1,16 +1,16 @@
 import { FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="bg-slate-200 shadow-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between p-3">
-        <Link to="/">
+        <NavLink to="/">
           <h1 className="flex flex-wrap text-sm font-bold sm:text-xl">
             <span>MERN</span>
             <span>Estate</span>
           </h1>
-        </Link>
+        </NavLink>
         <form className="flex items-center rounded-lg bg-slate-100 p-3">
           <input
             type="text"
@@ -22,21 +22,21 @@ const Header = () => {
           <FaSearch className="text-slate-600" />
         </form>
         <ul className="flex gap-4">
-          <Link to="/">
+          <NavLink to="/">
             <li className="hidden text-slate-700 hover:underline sm:inline">
               Home
             </li>
-          </Link>
+          </NavLink>
 
-          <Link to="/about">
+          <NavLink to="/about">
             <li className="hidden text-slate-700 hover:underline sm:inline">
               About
             </li>
-          </Link>
+          </NavLink>
 
-          <Link to="/sign-in">
+          <NavLink to="/sign-in">
             <li className=" text-slate-700 hover:underline ">Sign In</li>
-          </Link>
+          </NavLink>
         </ul>
       </div>
     </header>
